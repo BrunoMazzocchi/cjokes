@@ -12,9 +12,10 @@ class DataWrapper extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider(
-          create: (context) => ApiClient(baseUrl: "https://api.chucknorris.io/"),
+          create: (_) => ApiClient(baseUrl: "https://api.chucknorris.io/"),
         ),
       ],
+      child: child,
     );
   }
 }
