@@ -4,6 +4,7 @@ import 'package:jokes/features/jokes/data/datasource/joke_datasource_impl.dart';
 import 'package:jokes/features/jokes/data/repository/joke_repository_impl.dart';
 import 'package:jokes/features/jokes/domain/repository/joke_repository.dart';
 
+/// This class wraps the app with the repositories
 class RepositoryWrapper extends StatelessWidget {
   final Widget child;
 

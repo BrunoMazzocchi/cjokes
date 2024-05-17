@@ -9,6 +9,10 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => context.read<JokesBloc>()..add(GetJokeEvent()),
+        child: const Icon(Icons.downloading),
+      ),
       body: BlocConsumer<JokesBloc, JokesState>(
         listener: (context, state) {
           if(state is JokeError) {

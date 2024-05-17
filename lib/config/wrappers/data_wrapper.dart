@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jokes/config/api_client.dart';
 import 'package:provider/provider.dart';
 
+/// This class wraps the app with the api client
 class DataWrapper extends StatelessWidget {
   final Widget child;
 
